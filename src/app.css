@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+@import 'tailwindcss';
+@plugin '@tailwindcss/forms';
+@plugin '@tailwindcss/typography';
+
+@import '@skeletonlabs/skeleton';
+@import '@skeletonlabs/skeleton/optional/presets';
+@import '@skeletonlabs/skeleton/themes/wintry';
+
+@source '../node_modules/@skeletonlabs/skeleton-svelte/dist';
+
+[data-theme] {
+  --base-font-family: 'Sansation';
+  --heading-font-family: inherit;
+  --anchor-font-family: inherit;
+
+  scrollbar-width: thin !important;
+}
+
+ul {
+  scrollbar-width: none !important;
+}
